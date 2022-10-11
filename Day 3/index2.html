@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        div {
+            box-sizing: border-box;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            border: 4px solid black;
+            font-size: 0;
+        }
+        span {
+            /* position: relative; */
+            display: inline-block;
+            height: 50%;
+            width: 50%;
+            /* background-color: green; */
+            /* float: left; */
+        }
+
+        span:nth-child(1) {
+            background-color: red;
+        }
+
+        span:nth-child(4) {
+            background-color: red;
+        }
+        h1 {
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="board">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>szachownica</h1>
 </body>
+
 </html>

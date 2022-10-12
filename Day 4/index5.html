@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+            text-align: center;
+            line-height: 50px;
+            display: block;
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: green;
+        }
+        div {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            background-color: brown;
+            width: 0;
+            height: 0;
+            transition: 1s;
+        }
+        span:hover~div:nth-of-type(1) {
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            transform: translate(-50%, -50%);
+        }
+        span:hover~div:nth-of-type(2) {
+            top: 33.5%;
+            left: 50%;
+            width: 284px;
+            height: 284px;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: black;
+            z-index: -1;
+        }
+        span:hover~div:nth-of-type(3) {
+            top: 25%;
+            left: 59%;
+            width: 75px;
+            height: 140px;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            z-index: -2;
+        }
+        span:hover~div:nth-of-type(4) {
+            top: 45%;
+            left: 42%;
+            width: 75px;
+            height: 80px;
+            transform: translate(-50%, -50%);
+            background-color: yellow;
+            z-index: 1;
+        }
+        span:hover~div:nth-of-type(5) {
+            top: 45%;
+            left: 57%;
+            width: 75px;
+            height: 80px;
+            transform: translate(-50%, -50%);
+            background-color: yellow;
+            z-index: 1;
+        }
+        span:hover~div:nth-of-type(6) {
+            top: 60%;
+            left: 50%;
+            width: 100px;
+            height: 155px;
+            transform: translate(-50%, -50%);
+            background-color: gray;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <span>Budujemy</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

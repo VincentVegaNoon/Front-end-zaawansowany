@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .pointer {
+            height: 45%;
+            width: 5px;
+            margin-top: 10px;
+            margin-left: calc(50%);
+            border-radius: 50%;
+            background-color: black;
+            transition: 60s steps(60);
+            transform: rotate(0deg);
+            transform-origin: 50% 100%;
+        }
+        .clock:hover .pointer {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="pointer"></div>
+    </div>
+</body>
+</html>

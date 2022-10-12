@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 200vh;
+            margin: 0;
+        }
+        .rect {
+            box-sizing: border-box;
+            top: calc(100% - 100px);
+            left: calc(50% - 100px);
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transform: translate(-50%, -50%);
+            transform:  rotate(45deg);
+            border: 8px solid black;
+            z-index: 2;background-color: white;
+        }
+        .line {
+            position: absolute;
+            border-top: 8px dashed black;
+            top: 100%;
+            width: 200%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="rect"></div>
+    <div class="line"></div>
+</body>
+</html>

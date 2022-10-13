@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: arial;
+            font-size: 80px;
+            transition: .5s;
+            border: 0px solid black;
+        }
+        button {
+            font-size: 40px;
+        }
+        .larger:hover~h1 {
+            font-size: 160px;
+        }
+        .smaller:hover~h1 {
+            font-size: 40px;
+        }
+        .border:hover~h1 {
+            border: 30px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button class="larger">2xWiekszy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        section {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 400px;
+            width: 550px;
+            background-color: blueviolet;
+            overflow: hidden;
+        }
+        h1 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            line-height: 400px;
+            text-transform: uppercase;
+            font-size: 60px;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1:nth-child(1) {
+            left: 150%;
+            animation: wordone 5s infinite;
+        }
+        h1:nth-child(2) {
+            left: 150%;
+            animation: wordtwo 5s infinite;
+        }
+        h1:nth-child(3) {
+            left: 250%;
+            animation: wordthree 5s infinite;
+        }
+
+        @keyframes wordone {
+            0% {
+            left: 150%;
+            }
+            25% {
+            left: 50%;
+            }
+           50% {
+            left: -100%;
+           }
+           75% {
+            left: -100%;
+           }
+           100% {
+            left: -100%;
+           }
+        }
+        @keyframes wordtwo {
+            0% {
+            left: 150%;
+            }
+            25% {
+            left: 150%;
+            }
+           50% {
+            left: 50%;
+           }
+           75% {
+            left: -100%;
+           }
+           100% {
+            left: -100%;
+           }
+        }
+        @keyframes wordthree {
+            0% {
+            left: 150%;
+            }
+            25% {
+            left: 150%;
+            }
+           50% {
+            left: 150%;
+           }
+           75% {
+            left: 50%;
+           }
+           100% {
+            left: -100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>tanio</h1>
+        <h1>szybko</h1>
+        <h1>srednio</h1>
+    </section>
+</body>
+</html>

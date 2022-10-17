@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f1271246e2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            height: 100vh;
+        }
+        .arrow {
+            position: relative;
+            top: 80%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background-color: blueviolet;
+        }
+
+        .arrow i {
+            position: absolute;
+            top: -28%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            text-shadow: 0px 15px white, 0px -15px white;
+            animation: slide 1s linear infinite;
+        }
+        button:hover i {
+            animation-duration: .7s;
+        }
+        @keyframes slide {
+            0% {
+                top: -28%;
+            }
+            100% {
+                top: 120%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="arrow">
+        <i class="fa-solid fa-angle-down"></i>
+    </button>
+</body>
+
+</html>
